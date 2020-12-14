@@ -88,10 +88,11 @@ textarea{box-sizing:border-box;}
 
 .header .language{position:absolute;width:150px;height:40px;line-height:40px;top:30px;right:30px;background:#919191;color:#fff;font-weight:500;border-radius:5px;overflow:hidden;transition:all 0.3s;}
 .header .language.on{overflow:visible;height:160px;}
-.header .language:after{content:'';display:block;position:absolute;box-sizing:border-box;background:url('../images/arrowsplite.png') no-repeat;width:16px;height:16px;background-size:32px 48px;background-position:-8px -33px;top:12px;right:10px;cursor:pointer;overflow:hidden;}
-.header .language.on:after{background-position:-8px 1px;}
+
 .header .language a{display:block;text-align:left;padding-left:10px;cursor:pointer;}
 .header .language a:hover{color:#000;font-weight:600;}
+.header .language a:nth-of-type(1):after{content:'';display:block;position:absolute;box-sizing:border-box;background:url('../images/arrowsplite.png') no-repeat;width:16px;height:16px;background-size:32px 48px;background-position:-8px -33px;top:12px;right:10px;cursor:pointer;overflow:hidden;}
+.header .language.on a:nth-of-type(1):after{background-position:-8px 1px;}
 .header .language a:nth-of-type(1):hover{color:#fff;font-weight:400;}
 
 .header .mobile-menu{display:block;position:fixed;background:#fff;width:140px;height:100vh;top:0;right:-100%;z-index:5;padding-top:100px;}
@@ -105,10 +106,10 @@ textarea{box-sizing:border-box;}
 
 .header .language-mobile{position:absolute;width:80px;height:40px;line-height:40px;margin-top:50px;right:30px;background:#919191;color:#fff;font-weight:500;border-radius:5px;overflow:hidden;transition:all 0.3s;}
 .header .language-mobile.on{overflow:visible;height:160px;}
-.header .language-mobile:after{content:'';display:block;position:absolute;box-sizing:border-box;background:url('../images/arrowsplite.png') no-repeat;width:16px;height:16px;background-size:32px 48px;background-position:-8px -33px;top:12px;right:10px;cursor:pointer;overflow:hidden;}
-.header .language-mobile.on:after{background-position:-8px 1px;}
 .header .language-mobile a{display:block;text-align:left;padding-left:10px;cursor:pointer;}
 .header .language-mobile a:hover{color:#000;font-weight:600;}
+.header .language-mobile a:nth-of-type(1):after{content:'';display:block;position:absolute;box-sizing:border-box;background:url('../images/arrowsplite.png') no-repeat;width:16px;height:16px;background-size:32px 48px;background-position:-8px -33px;top:12px;right:10px;cursor:pointer;overflow:hidden;}
+.header .language-mobile.on a:nth-of-type(1):after{background-position:-8px 1px;}
 .header .language-mobile a:nth-of-type(1):hover{color:#fff;font-weight:400;}
 
 .header .menu_btn{width:35px;height:35px;position:absolute;top:35px;right:30px;z-index:50;transition:all 0.2s;}
