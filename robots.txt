@@ -1,0 +1,5 @@
+(http://fixability.co.kr/robots.txt)
+User-agent: *
+Disallow: /sub/
+Disallow: /data/
+Disallow: /cover/

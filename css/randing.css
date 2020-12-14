@@ -1,0 +1,93 @@
+.randing-wrap{position:relative;width:100%;}
+.randing-wrap .randing-background{width:100%;min-height:calc(100vh - 100px);background:#fff;}
+.randing-wrap .randing-background .phon-animate{display:none;width:300px;height:640px;background:#fff;border:2px solid #000;top:50%;margin-top:-320px;left:50%;margin-left:-700px;position:absolute;transform: rotate(45deg);overflow:hidden;}
+.randing-wrap .randing-container{display:block;position:absolute;box-sizing:border-box;width:100%;height:calc(100vh - 100px);margin:0;padding:0;top:0;left:0;transition:all 2s;overflow:hidden;opacity:0;z-index:-1;}
+.randing-wrap .randing-container.on{display:block;opacity:1;z-index:1;}
+
+.randing-wrap .randing-container .randing-animation{display:block;position:absolute;box-sizing:border-box;width:100%;height:calc(100vh - 100px);margin:0;padding:0;top:0;left:0;transition:all 2s;overflow:hidden;opacity:1;z-index:0;}
+/* 
+.randing-wrap .randing-container .randing-animation.back-1{background:url('../images/randing/conference-room-768441_1920.jpg') no-repeat;background-position:center;background-size:cover;opacity:1;z-index:0;}
+.randing-wrap .randing-container .randing-animation.back-2{background:url('../images/randing/meeting-2284501_1920_1.jpg') no-repeat;background-position:center;background-size:cover;opacity:1;z-index:0;}
+.randing-wrap .randing-container .randing-animation.back-3{background:url('../images/randing/write-593333_1920.jpg') no-repeat;background-position:center;background-size:cover;opacity:1;z-index:0;} */
+.randing-wrap .randing-container .randing-animation .randing{display:block;position:absolute;box-sizing:border-box;width:100%;height:calc(100vh - 100px);margin:0;padding:0;top:0;left:0;overflow:hidden;opacity:0;z-index:0;}
+.randing-wrap .randing-container .randing-animation .randing_1{background:url('../images/randing/background_01.jpg') no-repeat;background-position:center;background-size:cover;}
+.randing-wrap .randing-container .randing-animation .randing_2{background:url('../images/randing/background_02.jpg') no-repeat;background-position:center;background-size:cover;}
+.randing-wrap .randing-container .randing-animation .randing_3{background:url('../images/randing/background_03.jpg') no-repeat;background-position:center;background-size:cover;}
+.randing-wrap .randing-container .randing-animation .randing_4{background:url('../images/randing/background_04.jpg') no-repeat;background-position:center;background-size:cover;}
+
+.randing-wrap .randing-container .message-background{width:100%;height:calc(100vh - 100px);background:rgba(0,0,0,0.7);}
+.randing-wrap .randing-container .message-background>div{position:absolute;color:#fff;top:50%;left:50%;word-break:keep-all;line-height:44px;color:#999;text-align:center;}
+.randing-wrap .randing-container .message-background .catch-wrap{width:460px;height:30px;line-height:0px;/*background:rgba(23,28,97,0.5);*/margin-top:-60px;margin-left:-235px;text-align:center;color:#60b25b;}
+.randing-wrap .randing-container .message-background .catch-wrap span{position:absolute;display:block;width:100%;box-sizing:border-box;height:30px;text-align:center;opacity:0;z-index:0;}
+.randing-wrap .randing-container .message-background .catch-wrap .catch-1{word-spacing:0px;}
+.randing-wrap .randing-container .message-background .catch-wrap .catch-2{word-spacing:0px;}
+.randing-wrap .randing-container .message-background .catch-wrap .catch-3{word-spacing:0px;}
+.randing-wrap .randing-container .message-background .catch-wrap .catch-4{word-spacing:0px;}
+
+.randing-wrap .randing-container .message-background .message{opacity:0;z-index:0;text-align:center;}
+/* .randing-wrap .randing-container .message-background .message{margin-top:40px;margin-left:-235px;}
+.randing-wrap .randing-container .message-background .message-3{margin-top:90px;margin-left:-235px;} */
+
+/* .randing-wrap .randing-container .message-background .message-4:before{content:'';display:block;position:absolute;width:300px;height:50px;top:20px;left:20px;background:rgba(23,28,97,0.5);z-index:0;} */
+
+@keyframes phonaction{
+	/* 0% { transform: rotate(60deg); top:150px;margin-left:-580px; width:338px; height:720px;}
+	25% { transform: rotate(75deg); top:-250px;margin-left:-690px; width:506px; height:1080px;}
+	50%	{ transform: rotate(80deg); top:-270px;margin-left:-575px; width:600px; height:1280px;}
+	75% { transform: rotate(95deg); top:-300px;margin-left:-500px; width:900px; height:1920px;}
+	100% { transform: rotate(90deg); top:-510px;margin-left:-450px; width:900px; height:1920px;} */
+
+	/* 0% { transform: rotate(60deg); top:150px;margin-left:-580px; width:338px; height:720px;}
+	25% { transform: rotate(75deg); top:-250px;margin-left:-690px; width:506px; height:1080px;}
+	100% { transform: rotate(90deg); top:-510px;margin-left:-450px; width:900px; height:1920px;}
+
+	0% { transform: rotate(60deg); top:150px;margin-left:-580px; width:338px; height:720px;}
+	100% { transform: rotate(90deg); top:-510px;margin-left:-450px; width:900px; height:1920px;} */
+	0% { transform: rotate(60deg); margin-top:-320px;margin-left:-580px; width:300px;  height:640px;}
+	25% { transform: rotate(90deg); margin-top:-470px;margin-left:-320px; width:300px;  height:640px;}
+	100% { transform: rotate(90deg); margin-top:-1050px;margin-left:-450px; width:900px; height:1920px;}
+}
+
+@media all and (max-width:320px){
+	.randing-wrap .randing-container .message-background .catch-wrap{font-size:35px;font-weight:700;margin-top:-175px;}
+	.randing-wrap .randing-container .message-background .message{width:320px;margin-top:-75px;font-size:16px;margin-left:-160px;line-height:27px;}
+	.randing-wrap .randing-container .randing-animation img{margin-top:-130px;margin-left:-35%;}
+}
+@media all and (min-width:321px) and (max-width:480px){
+	.randing-wrap .randing-container .message-background .catch-wrap{font-size:35px;font-weight:700;margin-top:-175px;}
+	.randing-wrap .randing-container .message-background .message{width:360px;margin-top:-120px;font-size:16px;margin-left:-180px;line-height:27px;}
+	.randing-wrap .randing-container .randing-animation img{margin-top:-130px;margin-left:-35%;}
+}
+@media all and (min-width:481px) and (max-width:640px){
+	.randing-wrap .randing-container .message-background .catch-wrap{font-size:42px;font-weight:700;margin-top:-110px;}
+	.randing-wrap .randing-container .message-background .message{width:400px;margin-top:-60px;font-size:18px;margin-left:-200px;line-height:30px;}
+	.randing-wrap .randing-container .randing-animation img{margin-top:-130px;margin-left:-25%;}
+}
+@media all and (min-width:641px) and (max-width:720px){
+	.randing-wrap .randing-container .message-background .catch-wrap{font-size:42px;font-weight:700;margin-top:-110px;}
+	.randing-wrap .randing-container .message-background .message{width:400px;margin-top:-60px;font-size:18px;margin-left:-200px;line-height:30px;}
+	.randing-wrap .randing-container .randing-animation img{margin:-35% auto;}
+}
+@media all and (min-width:721px) and (max-width:1080px){
+	.randing-wrap .randing-container .message-background .catch-wrap{font-size:42px;font-weight:900;margin-top:-75px;}
+	.randing-wrap .randing-container .message-background .message{width:450px;margin-top:-10px;font-size:20px;margin-left:-225px;line-height:30px;}
+	.randing-wrap .randing-container .randing-animation img{margin:-30% auto;}
+}
+@media all and (min-width:1081px) and (max-width:1280px){
+	.randing-wrap .randing-container .message-background .catch-wrap{font-size:50px;font-weight:900;margin-top:-75px;}
+	/* .randing-wrap .randing-container .message-background .catch-wrap .catch-1{font-size:48px;} */
+	.randing-wrap .randing-container .message-background .message{width:500px;margin-top:-10px;font-size:20px;margin-left:-250px;line-height:34px;}
+	.randing-wrap .randing-container .randing-animation img{margin:-30% auto;}
+}
+@media all and (min-width:1281px) and (max-width:1500px){
+	.randing-wrap .randing-container .message-background .catch-wrap{font-size:50px;font-weight:900;margin-top:-75px;}
+	/* .randing-wrap .randing-container .message-background .catch-wrap .catch-1{font-size:48px;} */
+	.randing-wrap .randing-container .message-background .message{width:500px;margin-top:-10px;font-size:20px;margin-left:-250px;line-height:34px;}
+	.randing-wrap .randing-container .randing-animation img{margin:-20% auto;}
+}
+@media all and (min-width:1501px){
+	.randing-wrap .randing-container .message-background .catch-wrap{font-size:50px;font-weight:900;margin-top:-75px;}
+	/* .randing-wrap .randing-container .message-background .catch-wrap .catch-1{font-size:48px;} */
+	.randing-wrap .randing-container .message-background .message{width:500px;margin-top:-10px;font-size:20px;margin-left:-250px;line-height:34px;}
+	.randing-wrap .randing-container .randing-animation img{margin:-20% auto;}
+}
