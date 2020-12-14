@@ -153,28 +153,28 @@ $(function(){
 		};
 		setTimeout(roll_up,roll_speed);
 	});
-	// $('.language, .language-mobile').on('keypress','a, i',function(e){
-	// 	var sel_lang = $(this).data('lang');
-	// 	var roll_speed;
-	// 	var key_code = e.keyCode || e.which;
-	// 	roll_speed=30000;
-	// 	if (key_code === 13){
-	// 		if($('.language, .language-mobile').height()<160){
-	// 			$('.language, .language-mobile').stop().addClass('on');
-	// 		}else{
-	// 			$('.language, .language-mobile').stop().removeClass('on');
-	// 			if(sel_lang=='val'){
-	// 				$(this).html();
-	// 			}else{
-	// 				$('.language, .language-mobile').find('a:eq(0)').html(sel_lang);
-	// 			}
-	// 		}
-	// 		function roll_up(){
-	// 			$('.language, .language-mobile').stop().removeClass('on');
-	// 		};
-	// 		setTimeout(roll_up,roll_speed);
-	// 	}
-	// });
+	$('.language, .language-mobile').on('keypress','a, i',function(e){
+		var sel_lang = $(this).data('lang');
+		var roll_speed;
+		var key_code = e.keyCode || e.which;
+		roll_speed=30000;
+		if (key_code === 13){
+			if($('.language, .language-mobile').height()<160){
+				$('.language, .language-mobile').stop().addClass('on');
+			}else{
+				$('.language, .language-mobile').stop().removeClass('on');
+				if(sel_lang=='val'){
+					$(this).html();
+				}else{
+					$('.language, .language-mobile').find('a:eq(0)').html(sel_lang);
+				}
+			}
+			function roll_up(){
+				$('.language, .language-mobile').stop().removeClass('on');
+			};
+			setTimeout(roll_up,roll_speed);
+		}
+	});
 	//-----------------------------------
 	//------햄버거 버튼 클릭 시 동작-------
 	$('.nav').on('click keypress','.menu_btn input[type=checkbox]',function(){
